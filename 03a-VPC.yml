@@ -66,7 +66,7 @@ Resources:
       MapPublicIpOnLaunch: true
       Tags:
         - Key: Name
-          Value: !Sub ${EnvironmentName} Public Subnet (AZ1)
+          Value: !Sub ${EnvironmentName} Public-Subnet-(AZ1)
 
   PublicSubnet2:
     Type: AWS::EC2::Subnet
@@ -95,7 +95,7 @@ Resources:
     Properties:
       VpcId: !Ref VPC
       AvailabilityZone: !Select [ 1, !GetAZs '' ]
-      CidrBlock: !Ref PrivateSubnet2CIDR
+      CidrBlock: !Ref PrivateiSubnet2CIDR
       MapPublicIpOnLaunch: false
       Tags:
         - Key: Name
