@@ -1,0 +1,2 @@
+new commit for 3 way merge
+second commit line for 3 way merge
